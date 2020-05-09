@@ -9,7 +9,7 @@ $(document).ready(function(){
       
        if(input.val()=="")
           { 
-              input.val("PLEASE ENTER SOMETHING.......").css({color:"red",fontFamily: "'Amatic SC', cursive", fontSize:"200%"});
+              input.val("PLEASE ENTER SOMETHING.......").css({color:"red",fontFamily: "'Amatic SC', cursive", fontSize:"400%"});
               
               setTimeout(function(){
                   input.val("");
@@ -21,7 +21,7 @@ $(document).ready(function(){
            
            var task = $("<div class= 'task'></div>").text(input.val());
                           
-                    var check = $("<i class ='fas fa-check' style=color:greenyellow>").click(function(){
+                    var check = $("<i class ='fas fa-check' style=color:greenyellow float=right>").click(function(){
                          
                         var p = $(this).parent();
                         p.fadeOut(function(){
@@ -31,7 +31,7 @@ $(document).ready(function(){
                        $(this).remove(); 
                     });
                           
-                    var del = $(" <i class='fas fa-trash-alt' style=color:aqua>").click(function(){
+                    var del = $(" <i class='fas fa-trash-alt' style=color:aqua float= right>").click(function(){
                         
                         var p = $(this).parent();
                         p.fadeOut(function(){
@@ -39,7 +39,7 @@ $(document).ready(function(){
                         });
                     });
                             
-                    task.append(check,del);  
+                    task.append(del,check);  
                   $(".notcomp").append(task);
                       }
               
@@ -50,7 +50,7 @@ $(document).ready(function(){
                           
                     var task = $("<div class= 'task'></div>").text(input.val());
                           
-                    var check = $("<i class ='fas fa-check' style=color:greenyellow>").click(function(){
+                    var check = $("<i class ='fas fa-check' style=color:greenyellow float=right>").click(function(){
                          
                         var p = $(this).parent();
                         p.fadeOut(function(){
@@ -60,7 +60,7 @@ $(document).ready(function(){
                        $(this).remove(); 
                     });
                           
-                    var del = $(" <i class='fas fa-trash-alt' style=color:aqua>").click(function(){
+                    var del = $(" <i class='fas fa-trash-alt' style=color:aqua float= right>").click(function(){
                         
                         var p = $(this).parent();
                         p.fadeOut(function(){
@@ -68,7 +68,7 @@ $(document).ready(function(){
                         });
                     });
                             
-                    task.append(check,del);  
+                    task.append(del,check);  
                   $(".notcomp").append(task);
                       }
               });
