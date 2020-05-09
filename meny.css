@@ -1,0 +1,70 @@
+*{
+    font-family: 'Amatic SC', cursive;
+}
+.container{
+    background-image: url("file:///C:/Users/clc/Desktop/mountain.jpg");
+     
+    opacity:0.8;
+    
+    height: 500%;
+}
+
+h1{
+    text-align: center;
+    color:greenyellow;
+    
+    padding-top: 5%;
+    font-size: 6rem;
+    
+}
+
+h1 span{
+    color: snow;
+}
+
+.enter{
+    display: flex;
+    justify-content: center;
+}
+
+.input{
+    width:40%;
+    border-radius: 4px;
+    padding: 0;
+    font-size: 200%;
+    color:lightpink;
+}
+
+a{
+    text-decoration: none;
+    color:deepskyblue;
+}
+
+h3{
+    text-align: center;
+    font-size:350%;
+    color:yellow;
+}
+.notcomp{
+    display: block;
+}
+.task{
+    width:50%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 300%;
+    margin-left:25%;
+    color:cornsilk;
+    margin-top: 0.5%;
+    padding-left:1%;
+    padding-right: 1%;
+    background-color: turquoise;
+    border-radius:2rem;
+}
+.task i{
+    float:right;
+}
+
+.comp .task{
+    background-color: burlywood;
+}
