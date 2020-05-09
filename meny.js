@@ -41,6 +41,8 @@ $(document).ready(function(){
                             
                     task.append(del,check);  
                   $(".notcomp").append(task);
+           
+           input.val("");
                       }
               
        });
