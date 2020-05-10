@@ -5,7 +5,7 @@ $(document).ready(function(){
     var  list = $(".list");
     var id = 0;
     
-   $(".btn").on("click",function(){
+   $(".btn1").on("click",function(){
       
        if(input.val()=="")
           { 
