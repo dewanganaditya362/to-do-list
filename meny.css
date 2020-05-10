@@ -1,10 +1,11 @@
 *{
     font-family: 'Amatic SC', cursive;
+    font-weight:900;
 }
 .container{
-    background-image: url("mountain.jpg");
+    background-image: url("file:///C:/Users/clc/Desktop/mountain.jpg");
      
-    opacity:0.8;
+    opacity:0.6;
     
     height: 200%;
 }
@@ -31,7 +32,7 @@ h1 span{
     width:90%;
     border-radius: 40px;
     padding: 0;
-    font-size: 400%;
+    font-size: 700%;
     color:lightpink;
     outline: none;
 }
@@ -39,12 +40,19 @@ h1 span{
 a{
     text-decoration: none;
     color:deepskyblue;
-    font-size:500%;
+    font-size: 600%;
+    border:2px solid black;
+    border-radius:30px;
+    background-color: greenyellow;
+    padding:0.5%;
+    margin:0.5%;
+    
+    
 }
 
 h3{
     text-align: center;
-    font-size:700%;
+    font-size:900%;
     color:yellow;
     text-decoration: underline;
 }
@@ -53,7 +61,7 @@ h3{
 }
 .task{
     width:90%;
-    font-size: 350%;
+    font-size: 700%;
     margin-left:2%;
     color:cornsilk;
     margin-top: 1%;
@@ -64,10 +72,17 @@ h3{
 }
 .task span{
     float:right;
-    padding-left:2%;
+    padding-left:1%;
+    padding-right: 1%;
     cursor: pointer;
+    border:2px solid black;
+    margin-right:1%;
+    margin-top: 0.9%;
+    background-color: lightsalmon;
+    font-size:80%;
+    border-radius:50px;
 }
 
 .comp .task{
-    background-color: burlywood;
+    background-color: darkgrey;
 }
