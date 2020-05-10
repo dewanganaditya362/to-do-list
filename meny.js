@@ -21,7 +21,7 @@ $(document).ready(function(){
            
            var task = $("<div class= 'task'></div>").text(input.val());
                           
-                    var check = $("<i class ='fas fa-check' style=color:greenyellow float=right>").click(function(){
+                    var check = $("<span style=color:greenyellow float=right>DONE</span>").click(function(){
                          
                         var p = $(this).parent();
                         p.fadeOut(function(){
@@ -31,7 +31,7 @@ $(document).ready(function(){
                        $(this).remove(); 
                     });
                           
-                    var del = $(" <i class='fas fa-trash-alt' style=color:aqua float= right>").click(function(){
+                    var del = $(" <span style = color: aqua>DELETE</span>").click(function(){
                         
                         var p = $(this).parent();
                         p.fadeOut(function(){
@@ -52,7 +52,7 @@ $(document).ready(function(){
                           
                     var task = $("<div class= 'task'></div>").text(input.val());
                           
-                    var check = $("<i class ='fas fa-check' style=color:greenyellow float=right>").click(function(){
+                    var check = $("<span style=color:greenyellow float=right> DONE </span>").click(function(){
                          
                         var p = $(this).parent();
                         p.fadeOut(function(){
@@ -62,7 +62,7 @@ $(document).ready(function(){
                        $(this).remove(); 
                     });
                           
-                    var del = $(" <i class='fas fa-trash-alt' style=color:aqua float= right>").click(function(){
+                    var del = $(" <span style=color:aqua float= right>DELETE</span>").click(function(){
                         
                         var p = $(this).parent();
                         p.fadeOut(function(){
@@ -73,6 +73,7 @@ $(document).ready(function(){
                     task.append(del,check);  
                   $(".notcomp").append(task);
                       }
+                  
               });
               
           
