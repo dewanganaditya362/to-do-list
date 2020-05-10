@@ -1,83 +1,42 @@
-$(document).ready(function(){
+<html>
+    <head>
+        <title>JAVASCRIPT PRACTISE</title>
+        <link rel=stylesheet type=text/css href="meny.css">
+       <link href="C:\Users\clc\Downloads\fontawesome-free-5.12.1-web/css/all.css" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    </head>
     
-    var input = $(".input");
-    
-    var  list = $(".list");
-    var id = 0;
-    
-   $(".btn").on("click",function(){
+    <body>
+        
+        <div class="container">
+         <h1>TO-DO <span>LIST</span></h1>
+            
+            <div class="enter">
+            <input type="text" class="input">
+            
+        <a href="#" class="btn1"><i class="fas fa-plus-circle fa-5x btn"></i>
+            </a>
+            </div>
+            
+            <div class="notcomp">
+                <h3>Not Completed</h3>
+               
+            </div>
+            
+            <div class="comp">
+                <h3>Completed</h3>
+               
+            </div>
+            
+            
+            </div>
+        
+        
       
-       if(input.val()=="")
-          { 
-              input.val("PLEASE ENTER SOMETHING.......").css({color:"red",fontFamily: "'Amatic SC', cursive", fontSize:"400%"});
-              
-              setTimeout(function(){
-                  input.val("");
-              },2000);
-              
-          }
        
-       else{
-           
-           var task = $("<div class= 'task'></div>").text(input.val());
-                          
-                    var check = $("<span style=color:greenyellow float=right>DONE</span>").click(function(){
-                         
-                        var p = $(this).parent();
-                        p.fadeOut(function(){
-                           $(".comp").append(p);
-                            p.fadeIn();
-                        });
-                       $(this).remove(); 
-                    });
-                          
-                    var del = $(" <span style = color: aqua>DELETE</span>").click(function(){
-                        
-                        var p = $(this).parent();
-                        p.fadeOut(function(){
-                           p.remove(); 
-                        });
-                    });
-                            
-                    task.append(del,check);  
-                  $(".notcomp").append(task);
-           
-           input.val("");
-                      }
-              
-       });
-              input.on("keyup",function(e){
-                  if(e.keyCode == 13 && input.val()!="")
-                      {
-                          
-                    var task = $("<div class= 'task'></div>").text(input.val());
-                          
-                    var check = $("<span style=color:greenyellow float=right> DONE </span>").click(function(){
-                         
-                        var p = $(this).parent();
-                        p.fadeOut(function(){
-                           $(".comp").append(p);
-                            p.fadeIn();
-                        });
-                       $(this).remove(); 
-                    });
-                          
-                    var del = $(" <span style=color:aqua float= right>DELETE</span>").click(function(){
-                        
-                        var p = $(this).parent();
-                        p.fadeOut(function(){
-                           p.remove(); 
-                        });
-                    });
-                            
-                    task.append(del,check);  
-                  $(".notcomp").append(task);
-                      }
-                  
-              });
-              
-          
-       
-         
-    
- });
+        <script src="jquery-3.5.0.min.js"></script>
+        <script src="meny.js"></script>
+        
+    </body>
+
+</html>
