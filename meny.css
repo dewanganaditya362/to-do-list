@@ -61,7 +61,7 @@ h3{
     background-color: turquoise;
     border-radius:2rem;
 }
-.task i{
+.task span{
     float:right;
     padding-left:2%;
     cursor: pointer;
